@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sqe-Pd-9A0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="pMZ-zN-w5z">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jjf-JP-t7X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="sqe-Pd-9A0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N6D-i4-Cc7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xyC-UJ-i9T"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-1119" y="3"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXr-jN-TPH">
+                                <rect key="frame" x="157" y="218.5" width="62" height="30"/>
+                                <state key="normal" title="默认样式"/>
+                                <connections>
+                                    <action selector="btnOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IRR-To-BIG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSe-By-xLF">
+                                <rect key="frame" x="156" y="318.5" width="62" height="30"/>
+                                <state key="normal" title="上下图文"/>
+                                <connections>
+                                    <action selector="btnTopOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W94-kp-XZ2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgU-DU-2JJ">
+                                <rect key="frame" x="156.5" y="418.5" width="62" height="30"/>
+                                <state key="normal" title="左右图文"/>
+                                <connections>
+                                    <action selector="btnBotOnCLick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xvO-kc-4Bd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qSe-By-xLF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O1R-RN-ide"/>
+                            <constraint firstItem="xXr-jN-TPH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QJ2-sh-egd"/>
+                            <constraint firstItem="WgU-DU-2JJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="e3d-fq-zJY"/>
+                            <constraint firstItem="WgU-DU-2JJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="whV-bG-KIM"/>
+                            <constraint firstItem="qSe-By-xLF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yhU-hb-zlL"/>
+                            <constraint firstItem="xXr-jN-TPH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="yye-u8-n2D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="E2A-Sx-TeL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-87" y="10"/>
+        </scene>
+    </scenes>
+</document>
