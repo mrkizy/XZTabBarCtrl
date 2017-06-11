@@ -4,6 +4,6 @@
 <p>作者：kizy</p>
 <p>QQ：358033194</p>
 <h1>案例</h1>
-<img src = "example" \>
-<img src = "example1" />
-<img src = "example2" \>
+<img src = "example1.png" style = "width: 200; height: 300;"\>
+<img src = "example2.png" \>
+<img src = "example3.png" \>
