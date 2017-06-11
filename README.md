@@ -22,7 +22,7 @@ Import the main file：<code>#import "XZTabBar.h"</code><br>
 </ul>
 </li>
 </ul>
-<h3>initialize:the same to UITabBarViewController(初始化:和UITabBarViewController)</h3>
+<h3>initialize：the same to UITabBarViewController(初始化:和UITabBarViewController)</h3>
 
 <pre>
 UIViewController *ctrl1 = [[UIViewController alloc] init];
@@ -30,7 +30,9 @@ UIViewController *ctrl2 = [[OneViewCtrl alloc] init];
 UIViewController *ctrl3 = [[RedViewCtrl alloc] init];
 
 <span class="pl-c1">XZTabBarCtrl</span> *tabBarCtrl = [[<span class="pl-c1">XZTabBarCtrl</span> alloc] init];
+<span class="pl-c">//将子控制器加入childVCs，用法类似UITabBarViewController的viewControllers</span>
 tabBarCtrl.childVCs = @[ctrl1, ctrl2, ctrl3];
+<span class="pl-c">为顶部ToolBar添加需要显示的标题</span>
 tabBarCtrl.toolBarTitles = @[@"first", @"second", @"third"];
 </pre>
 
