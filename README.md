@@ -31,8 +31,7 @@ UIViewController *ctrl3 = [[RedViewCtrl alloc] init];
 
 <span class = "pl-c1">XZTabBarCtrl *tabBarCtrl = [[XZTabBarCtrl alloc] init];
 tabBarCtrl.childVCs = @[ctrl1, ctrl2, ctrl3];
-tabBarCtrl.toolBarTitles = @[@"first", @"second", @"third"];
-</span>
+tabBarCtrl.toolBarTitles = @[@"first", @"second", @"third"];</span>
 </pre>
 
 
