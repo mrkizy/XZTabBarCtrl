@@ -21,18 +21,17 @@ Import the main file：<code>#import "XZTabBar.h"</code><br>
 (引用头文件<code>XZTabBar.h</code>)</li>
 </ul>
 </li>
-<li>Usage:(用法)
-<ul>
-<li>initialize:(初始化)
-<ul>
+</ul>
+<h3>initialize:the same to UITabBarViewController(初始化:和UITabBarViewController)</h3>
+
 <pre>
+UIViewController *ctrl1 = [[UIViewController alloc] init];
+UIViewController *ctrl2 = [[OneViewCtrl alloc] init];
+UIViewController *ctrl3 = [[RedViewCtrl alloc] init];
 
+XZTabBarCtrl *tabBarCtrl = [[XZTabBarCtrl alloc] init];
+tabBarCtrl.childVCs = @[ctrl1, ctrl2, ctrl3];
+tabBarCtrl.toolBarTitles = @[@"first", @"second", @"third"];
 </pre>
-</ul>
 
-</li>
-</ul>
-
-</li>
-</ul>
 
