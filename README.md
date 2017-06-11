@@ -95,9 +95,9 @@ Import the main file：<code>#import "XZTabBar.h"</code> in childViewController<
 //  @warning    该属性用法类似UITabBarController的selectedIndex属性
 @property (nonatomic, assign) NSInteger selectedIndex;
 </pre>
-<h3 name="delegate"></h3>
+<h3 name="delegate">delegate:(代理)</h3>
 <p>@protocol XZTabBarCtrlDelegate <NSObject></p>
-<span style="font-size:30px;">- (void)xzTabBarCtrl:(XZTabBarCtrl *)tabbarCtrl selectedItem:(ToolBarItem *)toolBarItem;<span>
+<span style="font-size:30px;">- (void)xzTabBarCtrl:(XZTabBarCtrl *)tabbarCtrl selectedItem:(ToolBarItem *)toolBarItem;</span>
 - (BOOL)xzTabBarCtrl:(XZTabBarCtrl *)tabbarCtrl shouldSelectViewController:(UIViewController *)viewController;
 - (void)xzTabBarCtrl:(XZTabBarCtrl *)tabbarCtrl didSelectViewController:(UIViewController *)viewController;
 @end
