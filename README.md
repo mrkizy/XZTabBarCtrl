@@ -1,9 +1,4 @@
 # XZTabBarCtrl
-<style>
-.c{
-
-}
-</style>
 <p>这是带有顶部toolBar的控制器，支持圆形小红点、数字小红点、多种图文样式，与APPLE官方控件-UITabBarViewController一样的代理设计模式，简单易用。</p>
 <p>作者：kizy</p>
 <p>QQ：358033194</p>
@@ -80,9 +75,8 @@ tabBarCtrl.toolBarTitles = @[@"第一个Item", @"第二个Item", @"第三个Item
 
 //  @decription 存放子控制器的数组
 //  @warning    该属性不能为空，必须赋值
-@property (nonatomic, copy) NSMutableArray<__kindof UIViewController *> *childVCs;
+<span class="pl-c">@property (nonatomic, copy) NSMutableArray<__kindof UIViewController *> *childVCs;</span>
 
-//
 //  @decription  当前显示的控制器的Index
 //  @warning    该属性用法类似UITabBarController的selectedIndex属性
 @property (nonatomic, assign) NSInteger selectedIndex;
