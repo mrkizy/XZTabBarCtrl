@@ -37,13 +37,14 @@ tabBarCtrl.childVCs = @[ctrl1, ctrl2, ctrl3];
 <span class="pl-c">为顶部ToolBar添加需要显示的标题</span>
 tabBarCtrl.toolBarTitles = @[@"第一个Item", @"第二个Item", @"第三个Item"];
 
-//为顶部ToolBar设置显示样式，其他样式设置请看<a href = "#">属性</a>
+//为顶部ToolBar设置显示样式，更多样式设置请看<a href = "#properties">属性</a>
 tabBarCtrl.itemType = ToolBarItemType_leftToRight;  ／／ToolBarItemType_default（默认样式）、ToolBarItemType_leftToRight(图文左右排列)、ToolBarItemType_topToBottom（图文上下排列）
 tabBarCtrl.toolBarImages = @[@"job_push_icon_blue", @"job_push_icon_blue", @"job_push_icon_blue"];//设置图片数组
 tabBarCtrl.xzToolBarColor = [UIColor whiteColor]; ／／设置背景色
 </pre>
-<h3>properties of XZTabBarCtrl:(属性)</h3>
-<pre><span class="pl-k">@interface</span> <span class="pl-en">XZTabBarCtrl</span> : <span class="pl-e">UIViewController</span>
+<h3 name="properties">properties of XZTabBarCtrl:(属性)</h3>
+<pre>
+<span class="pl-k">@interface</span> <span class="pl-en">XZTabBarCtrl</span> : <span class="pl-e">UIViewController</span>
 
 //  代理
 @property (nonatomic, weak) id<XZTabBarCtrlDelegate> delegate;
