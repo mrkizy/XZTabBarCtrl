@@ -106,6 +106,6 @@ Import the main file：<code>#import "XZTabBar.h"</code> in childViewController<
 <p class="pl-c">//点击前调用，控制是否跳转</p>
 - (BOOL)xzTabBarCtrl:(XZTabBarCtrl *)tabbarCtrl shouldSelectViewController:(UIViewController *)viewController;
 
-<p class="pl-c">//点击时调用，返回即将显示控制器</p>
+<p class="pl-k">//点击时调用，返回即将显示控制器</p>
 - (void)xzTabBarCtrl:(XZTabBarCtrl *)tabbarCtrl didSelectViewController:(UIViewController *)viewController;
 @end
