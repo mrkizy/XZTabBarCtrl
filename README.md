@@ -30,10 +30,12 @@ UIViewController *ctrl2 = [[OneViewCtrl alloc] init];
 UIViewController *ctrl3 = [[RedViewCtrl alloc] init];
 
 <span class="pl-c1">XZTabBarCtrl</span> *tabBarCtrl = [[<span class="pl-c1">XZTabBarCtrl</span> alloc] init];
+
 <span class="pl-c">//将子控制器加入childVCs，用法类似UITabBarViewController的viewControllers</span>
 tabBarCtrl.childVCs = @[ctrl1, ctrl2, ctrl3];
+
 <span class="pl-c">为顶部ToolBar添加需要显示的标题</span>
-tabBarCtrl.toolBarTitles = @[@"first", @"second", @"third"];
+tabBarCtrl.toolBarTitles = @[@"第一个Item", @"第二个Item", @"第三个Item"];
 </pre>
 
 
