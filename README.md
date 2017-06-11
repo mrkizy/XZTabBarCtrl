@@ -9,5 +9,17 @@
 <img src = "example1.png" style = "width: 200px; height: 300px;"\>
 <img src = "example2.png" \>
 <img src = "example3.png" \>
-<h1>使用教程</h1>
+<h1>如何使用XZTabBarCtrl</h1>
+<ul>
+<li>手动引用:
+<ul>
+<li>
+将<code>XZTabBarCtrl</code>文件夹及子文件拉到你的项目中<br>
+Drag All files in the <code>XZTabBarCtrl</code>folder to project
+</li>
+<li></li>
+</ul>
+</li>
+
+</ul>
 
