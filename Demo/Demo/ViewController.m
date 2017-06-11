@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "XZTabBarCtrl.h"
+//#import "XZTabBarCtrl.h"
 #import "RedViewCtrl.h"
 #import "OneViewCtrl.h"
+#import "XZTabBar.h"
 
 typedef void(^block)(id resul);
 

@@ -44,6 +44,7 @@
 		F22069631EEA3D94008726CD /* RedViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedViewCtrl.m; sourceTree = "<group>"; };
 		F22069651EEA3F55008726CD /* OneViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewCtrl.h; sourceTree = "<group>"; };
 		F22069661EEA3F55008726CD /* OneViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewCtrl.m; sourceTree = "<group>"; };
+		F2536A281EECFC02000DD6A4 /* XZTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XZTabBar.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +106,7 @@
 		F22069551EEA2FD5008726CD /* XZTabBarCtrl */ = {
 			isa = PBXGroup;
 			children = (
+				F2536A281EECFC02000DD6A4 /* XZTabBar.h */,
 				F22069561EEA2FD5008726CD /* ImgTextButton.h */,
 				F22069571EEA2FD5008726CD /* ImgTextButton.m */,
 				F22069581EEA2FD5008726CD /* ToolBarItem.h */,
@@ -361,6 +363,7 @@
 				F22069471EEA2EA5008726CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
