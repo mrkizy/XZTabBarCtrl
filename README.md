@@ -99,7 +99,7 @@ Import the main file：<code>#import "XZTabBar.h"</code> in childViewController<
 @property (nonatomic, assign) NSInteger selectedIndex;
 </pre>
 <h3 name="delegate">delegate:(代理)</h3>
-<p>@protocol XZTabBarCtrlDelegate </p>
+<p>@protocol XZTabBarCtrlDelegate <NSObject></p>
 <p class="pl-c">//点击时调用，返回即将显示控制器对应toolBarItem</p>
 - (void)xzTabBarCtrl:(XZTabBarCtrl *)tabbarCtrl selectedItem:(ToolBarItem *)toolBarItem;
 
