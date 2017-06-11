@@ -42,7 +42,7 @@ tabBarCtrl.itemType = ToolBarItemType_leftToRight;  ／／ToolBarItemType_defau
 tabBarCtrl.toolBarImages = @[@"job_push_icon_blue", @"job_push_icon_blue", @"job_push_icon_blue"];//设置图片数组
 tabBarCtrl.xzToolBarColor = [UIColor whiteColor]; ／／设置背景色
 </pre>
-<h3>子控制器获取对应TabBarItem</h3>
+<h3>子控制器获取对应toolBarItem</h3>
 <ul>
 <li>
 Import the main file：<code>#import "XZTabBar.h"</code> in childViewController<br>
@@ -95,4 +95,9 @@ Import the main file：<code>#import "XZTabBar.h"</code> in childViewController<
 //  @warning    该属性用法类似UITabBarController的selectedIndex属性
 @property (nonatomic, assign) NSInteger selectedIndex;
 </pre>
-
+<h3 name="delegate"></h3>
+<p>@protocol XZTabBarCtrlDelegate <NSObject></p>
+<span style="font-size:30px;">- (void)xzTabBarCtrl:(XZTabBarCtrl *)tabbarCtrl selectedItem:(ToolBarItem *)toolBarItem;<span>
+- (BOOL)xzTabBarCtrl:(XZTabBarCtrl *)tabbarCtrl shouldSelectViewController:(UIViewController *)viewController;
+- (void)xzTabBarCtrl:(XZTabBarCtrl *)tabbarCtrl didSelectViewController:(UIViewController *)viewController;
+@end
