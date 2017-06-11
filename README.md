@@ -61,8 +61,8 @@ Import the main file：<code>#import "XZTabBar.h"</code> in childViewController<
 @property (nonatomic, weak) id<XZTabBarCtrlDelegate> delegate;
 
 //  @decription toolBarItem's title: 存放自定义tooleBar的标题数组
-//  @warning    该属性可为空，为空表示不创建tooleBar
-@property (nonatomic, copy) NSArray *toolBarTitles;
+//  @warning    该属性可为空，为空表示不创建tooleBar
+<code>@property (nonatomic, copy) NSArray *toolBarTitles;</code>
 
 //  @decription toolBarItem's image: 存放自定义tooleBar的图片数组
 //  @warning    该属性可为空，如需赋值，count大小需与toolBarTitles一致
