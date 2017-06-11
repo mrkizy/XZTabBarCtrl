@@ -37,5 +37,22 @@ tabBarCtrl.childVCs = @[ctrl1, ctrl2, ctrl3];
 <span class="pl-c">为顶部ToolBar添加需要显示的标题</span>
 tabBarCtrl.toolBarTitles = @[@"第一个Item", @"第二个Item", @"第三个Item"];
 </pre>
+<pre><span class="pl-k">@interface</span> <span class="pl-en">MJRefreshFooter</span> : <span class="pl-e">MJRefreshComponent</span>
+<span class="pl-c"><span class="pl-c">/*</span>* Creat footer <span class="pl-c">*/</span></span>
++ (<span class="pl-k">instancetype</span>)<span class="pl-en">footerWithRefreshingBlock</span><span class="pl-en">:</span>(MJRefreshComponentRefreshingBlock)<span class="pl-smi">refreshingBlock</span>;
+<span class="pl-c"><span class="pl-c">/*</span>* Creat footer <span class="pl-c">*/</span></span>
++ (<span class="pl-k">instancetype</span>)<span class="pl-en">footerWithRefreshingTarget</span><span class="pl-en">:</span>(<span class="pl-c1">id</span>)<span class="pl-smi">target</span> <span class="pl-en">refreshingAction</span><span class="pl-en">:</span>(<span class="pl-c1">SEL</span>)<span class="pl-smi">action</span>;
+
+<span class="pl-c"><span class="pl-c">/*</span>* NoticeNoMoreData <span class="pl-c">*/</span></span>
+- (<span class="pl-k">void</span>)<span class="pl-en">noticeNoMoreData</span>;
+<span class="pl-c"><span class="pl-c">/*</span>* ResetNoMoreData（Clear the status of NoMoreData ） <span class="pl-c">*/</span></span>
+- (<span class="pl-k">void</span>)<span class="pl-en">resetNoMoreData</span>;
+
+<span class="pl-c"><span class="pl-c">/*</span>* Ignored scrollView contentInset bottom <span class="pl-c">*/</span></span>
+<span class="pl-k">@property</span> (<span class="pl-k">assign</span>, <span class="pl-k">nonatomic</span>) <span class="pl-c1">CGFloat</span> ignoredScrollViewContentInsetBottom;
+
+<span class="pl-c"><span class="pl-c">/*</span>* Automaticlly show or hidden by the count of data（Show-have data，Hidden- no data） <span class="pl-c">*/</span></span>
+<span class="pl-k">@property</span> (<span class="pl-k">assign</span>, <span class="pl-k">nonatomic</span>) <span class="pl-c1">BOOL</span> automaticallyHidden;
+<span class="pl-k">@end</span></pre>
 
 
