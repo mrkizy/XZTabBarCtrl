@@ -97,7 +97,12 @@ Import the main file：<code>#import "XZTabBar.h"</code> in childViewController<
 </pre>
 <h3 name="delegate">delegate:(代理)</h3>
 <p>@protocol XZTabBarCtrlDelegate <NSObject></p>
-<p><span style="font-size:30px;">- (void)xzTabBarCtrl:(XZTabBarCtrl *)tabbarCtrl selectedItem:(ToolBarItem *)toolBarItem;</span></p>
+<p class="pl-c">//点击时调用，返回即将显示控制器对应toolBarItem</p>
+- (void)xzTabBarCtrl:(XZTabBarCtrl *)tabbarCtrl selectedItem:(ToolBarItem *)toolBarItem;
+
+<p class="pl-c">//点击前调用，控制是否跳转</p>
 - (BOOL)xzTabBarCtrl:(XZTabBarCtrl *)tabbarCtrl shouldSelectViewController:(UIViewController *)viewController;
+
+<p class="pl-c">//点击时调用，返回即将显示控制器</p>
 - (void)xzTabBarCtrl:(XZTabBarCtrl *)tabbarCtrl didSelectViewController:(UIViewController *)viewController;
 @end
