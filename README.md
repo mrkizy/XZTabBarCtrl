@@ -42,12 +42,13 @@ tabBarCtrl.itemType = ToolBarItemType_leftToRight;  ／／ToolBarItemType_defau
 tabBarCtrl.toolBarImages = @[@"job_push_icon_blue", @"job_push_icon_blue", @"job_push_icon_blue"];//设置图片数组
 tabBarCtrl.xzToolBarColor = [UIColor whiteColor]; ／／设置背景色
 </pre>
-<h3>获取子控制器对应TabBarItem</h3>
+<h3>子控制器获取对应TabBarItem</h3>
 <ul>
 <li>
-Import the main file：<code>#import "XZTabBar.h"</code><br>
-(引用头文件<code>XZTabBar.h</code>)</li>
-<li><code>self.toolBarItem.budgeView.hidden = NO;</code></li>
+Import the main file：<code>#import "XZTabBar.h"</code> in childViewController<br>
+(子控制器中引用头文件<code>XZTabBar.h</code>)</li>
+<li>显示小红点：<code>self.toolBarItem.budgeView.hidden = NO;</code></li>
+<li>显示6个未读数字：<code>self.toolBarItem.bageVal = @"6";</code></li>
 </ul>
 <h3 name="properties">properties of XZTabBarCtrl:(属性)</h3>
 <pre>
