@@ -34,10 +34,10 @@ UIViewController *ctrl3 = [[RedViewCtrl alloc] init];
 <span class="pl-c">//将子控制器加入childVCs，用法类似UITabBarViewController的viewControllers</span>
 tabBarCtrl.childVCs = @[ctrl1, ctrl2, ctrl3];
 
-<p style="color:red">//为顶部ToolBar添加需要显示的标题</p>
+<p style="color:red;"style="color:red;">//为顶部ToolBar添加需要显示的标题</p>
 tabBarCtrl.toolBarTitles = @[@"第一个Item", @"第二个Item", @"第三个Item"];
 
-//设置代理
+//设置<a href="#delegate">代理</a>
 tabBarCtrl.delegate = self;
 
 //为顶部ToolBar设置显示样式，更多样式设置请看<a href = "#properties">属性</a>
