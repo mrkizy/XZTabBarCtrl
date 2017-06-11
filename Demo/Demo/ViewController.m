@@ -41,6 +41,7 @@ typedef void(^block)(id resul);
         tabBar.itemType = ToolBarItemType_default;
         tabBar.xzToolBarColor = [UIColor whiteColor];
         tabBar.xzTitleSelectedColor = [UIColor blueColor];
+        tabBar.toolBarImages = @[@"job_push_icon_blue", @"job_push_icon_blue", @"job_push_icon_blue"];
         [self.navigationController pushViewController:tabBar animated:YES];
     }];
 }
