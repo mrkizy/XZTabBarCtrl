@@ -36,6 +36,11 @@ tabBarCtrl.childVCs = @[ctrl1, ctrl2, ctrl3];
 
 <span class="pl-c">为顶部ToolBar添加需要显示的标题</span>
 tabBarCtrl.toolBarTitles = @[@"第一个Item", @"第二个Item", @"第三个Item"];
+
+//为顶部ToolBar设置显示样式，其他样式设置请看<a href = "#">属性</a>
+tabBarCtrl.itemType = ToolBarItemType_leftToRight;  ／／ToolBarItemType_default（默认样式）、ToolBarItemType_leftToRight(图文左右排列)、ToolBarItemType_topToBottom（图文上下排列）
+tabBarCtrl.toolBarImages = @[@"job_push_icon_blue", @"job_push_icon_blue", @"job_push_icon_blue"];//设置图片数组
+tabBarCtrl.xzToolBarColor = [UIColor whiteColor]; ／／设置背景色
 </pre>
 <h3>properties of XZTabBarCtrl:(属性)</h3>
 <pre><span class="pl-k">@interface</span> <span class="pl-en">XZTabBarCtrl</span> : <span class="pl-e">UIViewController</span>
@@ -75,7 +80,7 @@ tabBarCtrl.toolBarTitles = @[@"第一个Item", @"第二个Item", @"第三个Item
 
 //  @decription 存放子控制器的数组
 //  @warning    该属性不能为空，必须赋值
-<span class="pl-c">@property (nonatomic, copy) NSMutableArray<__kindof UIViewController *> *childVCs;</span>
+@property (nonatomic, copy) NSMutableArray<__kindof UIViewController *> *childVCs;
 
 //  @decription  当前显示的控制器的Index
 //  @warning    该属性用法类似UITabBarController的selectedIndex属性
