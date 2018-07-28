@@ -37,8 +37,8 @@ s.homepage     = "https://github.com/mrkizy/XZTabBarCtrl"
 #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
 #
 
-# s.license      = "MIT (example)"
-s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+s.license      = "MIT"
+# s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
 # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -63,7 +63,7 @@ s.author             = { "kizy" => "358033194@qq.com" }
 #
 
 # s.platform     = :ios
-# s.platform     = :ios, "5.0"
+s.platform     = :ios, "8.0"
 
 #  When using multiple platforms
 # s.ios.deployment_target = "5.0"
