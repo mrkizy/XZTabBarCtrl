@@ -24,8 +24,7 @@ s.summary      = "这是带有顶部toolBar的控制器，支持圆形小红点�
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
-s.description  = <<-DESC
-DESC
+s.description  = "这是带有顶部toolBar的控制器，支持圆形小红点、数字小红点、多种图文样式，与APPLE官方控件"
 
 s.homepage     = "https://github.com/mrkizy/XZTabBarCtrl"
 # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
