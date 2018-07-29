@@ -90,9 +90,9 @@ s.source       = { :git => "https://github.com/mrkizy/XZTabBarCtrl.git", :tag =>
 #
 
 s.source_files  = "XZTabBarCtrl/{XZTabBar}*.{h,m}"
-s.exclude_files = "XZTabBarCtrl/{Img,Tool,UI}*.{h,m}"
+# s.exclude_files = "XZTabBarCtrl/{Img,Tool,UI}*.{h,m}"
 
-# s.public_header_files = "Classes/**/*.h"
+s.public_header_files = "XZTabBarCtrl/{XZTabBar}*.h"
 
 
 # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
