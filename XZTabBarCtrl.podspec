@@ -89,7 +89,7 @@ s.source       = { :git => "https://github.com/mrkizy/XZTabBarCtrl.git", :tag =>
 #  Not including the public_header_files will make all headers public.
 #
 
-s.source_files  = "XZTabBarCtrl/XZTabBarCtrl.{h,m}, XZTabBarCtrl/XZTabBar.h"
+s.source_files  = "XZTabBarCtrl/{XZTabBar}*.{h,m}"
 s.exclude_files = "XZTabBarCtrl/{Img,Tool,UI}*.{h,m}"
 
 # s.public_header_files = "Classes/**/*.h"
