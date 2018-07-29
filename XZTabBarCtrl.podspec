@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "XZTabBarCtrl"
-s.version      = "0.0.1"
-s.summary      = "这是带有顶部toolBar的控制器，支持圆形小红点、数字小红点、多种图文样式，与APPLE官方控件-UITabBarViewController一样的代理设计模式，简单易用。"
+s.version      = "0.0.2"
+s.summary      = "XZTabBarCtrl for iOS"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
